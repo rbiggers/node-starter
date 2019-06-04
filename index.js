@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 const sumApi = require('./SumApi');
 
 console.log('Syncronous sum of 1 + 2 = ', sumApi.GetSumSync(1, 2));
