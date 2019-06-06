@@ -14,8 +14,8 @@
         "ecmaVersion": 2018
     },
     "rules": {
-        "no-cond-assign": ["error", "except-parens"],
-        "no-restricted-syntax": ["error", "BinaryExpression[operator='in']"],
+        "no-cond-assign": ["off", "except-parens"],
+        "no-restricted-syntax": ["off", "BinaryExpression[operator='in']"],
         "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
         "import/no-extraneous-dependencies": "off",
         "no-console": "off",
