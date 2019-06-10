@@ -9,12 +9,13 @@ const SumApi = () => {
    * @param {number} a The first number to add
    * @param {number} b The second number to add
    * @returns {number} The sum of a and b
+   * @throws Will throw an error
    */
   const GetSumSync = (a, b) => {
     try {
       return sum(a, b);
-    } catch (error) {
-      throw new Error(error);
+    } catch (err) {
+      throw (err);
     }
   };
 
@@ -24,6 +25,7 @@ const SumApi = () => {
    * @param {number} a The first number to add
    * @param {number} b The second number to add
    * @returns {number} The sum of a and b
+   *    * @throws Will throw an error
    */
   const GetSumAsync = async (a, b) => {
     try {
@@ -32,8 +34,8 @@ const SumApi = () => {
           resolve(sum(a, b));
         }, 3000);
       });
-    } catch (error) {
-      throw new Error(error);
+    } catch (err) {
+      throw (err);
     }
   };
 
