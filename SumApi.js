@@ -9,6 +9,7 @@ const SumApi = () => {
    * @param {number} a The first number to add
    * @param {number} b The second number to add
    * @returns {number} The sum of a and b
+   *
    * @throws Will throw an error
    */
   const GetSumSync = (a, b) => {
@@ -25,7 +26,8 @@ const SumApi = () => {
    * @param {number} a The first number to add
    * @param {number} b The second number to add
    * @returns {number} The sum of a and b
-   *    * @throws Will throw an error
+   *
+   * @throws Will throw an error
    */
   const GetSumAsync = async (a, b) => {
     try {
