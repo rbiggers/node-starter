@@ -21,6 +21,7 @@
         "import/no-extraneous-dependencies": "off",
         "no-console": "off",
         "no-continue": "warn",
+        "max-len": ["error", { "ignoreComments": true }],
         "jest/no-disabled-tests": "warn",
         "jest/no-focused-tests": "error",
         "jest/no-identical-title": "error",
